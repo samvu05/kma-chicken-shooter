@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ChickenShooter</string>
+    <string name="play">PLAY</string>
+    <string name="high_score">HIGH SCORE</string>
+    <string name="help">HELP</string>
+    <string name="exit">EXIT</string>
+    <string name="setting">SETTING</string>
 </resources>
