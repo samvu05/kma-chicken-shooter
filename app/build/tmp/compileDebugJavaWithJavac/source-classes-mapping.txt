@@ -1,0 +1,12 @@
+com/example/chickenshooter/databinding/ActivitySettingBinding.java
+ com.example.chickenshooter.databinding.ActivitySettingBinding
+com/example/chickenshooter/databinding/ActivityMainBinding.java
+ com.example.chickenshooter.databinding.ActivityMainBinding
+com/example/chickenshooter/DataBindingTriggerClass.java
+ com.example.chickenshooter.DataBindingTriggerClass
+com/example/chickenshooter/databinding/ActivityHelpBinding.java
+ com.example.chickenshooter.databinding.ActivityHelpBinding
+com/example/chickenshooter/databinding/ActivityHighscoreBinding.java
+ com.example.chickenshooter.databinding.ActivityHighscoreBinding
+com/example/chickenshooter/BuildConfig.java
+ com.example.chickenshooter.BuildConfig
