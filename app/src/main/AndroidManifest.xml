@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ChickenShooter">
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,16 +19,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".HelpActivity"
+            android:name=".activity.HelpActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".HighScoreActivity"
+            android:name=".activity.HighScoreActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SettingActivity"
+            android:name=".activity.SettingActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".GameActivity"
+            android:name=".activity.GameActivity"
             android:screenOrientation="portrait"/>
     </application>
 

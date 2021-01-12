@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="@dimen/margin_32"
-        tools:context=".MainActivity">
+        tools:context=".activity.MainActivity">
 
         <TextView
             android:layout_width="wrap_content"
@@ -21,5 +21,15 @@
             android:fontFamily="@font/atari_pixel"
             android:text="@string/help"
             android:textSize="@dimen/textSize28" />
+
+        <ImageView
+            android:id="@+id/btn_help_exit"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_64"
+            android:src="@drawable/icon_fingure" />
+
     </RelativeLayout>
 </layout>

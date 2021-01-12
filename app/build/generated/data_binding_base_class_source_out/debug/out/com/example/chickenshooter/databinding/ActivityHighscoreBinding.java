@@ -4,6 +4,9 @@ package com.example.chickenshooter.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
@@ -13,8 +16,34 @@ import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class ActivityHighscoreBinding extends ViewDataBinding {
-  protected ActivityHighscoreBinding(Object _bindingComponent, View _root, int _localFieldCount) {
+  @NonNull
+  public final ImageView btnHighScoreExit;
+
+  @NonNull
+  public final TextView emptyHighScore;
+
+  @NonNull
+  public final TextView tvHighScoreName;
+
+  @NonNull
+  public final TextView tvHighSocre;
+
+  @NonNull
+  public final TextView tvTitle;
+
+  @NonNull
+  public final LinearLayout viewHighScore;
+
+  protected ActivityHighscoreBinding(Object _bindingComponent, View _root, int _localFieldCount,
+      ImageView btnHighScoreExit, TextView emptyHighScore, TextView tvHighScoreName,
+      TextView tvHighSocre, TextView tvTitle, LinearLayout viewHighScore) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.btnHighScoreExit = btnHighScoreExit;
+    this.emptyHighScore = emptyHighScore;
+    this.tvHighScoreName = tvHighScoreName;
+    this.tvHighSocre = tvHighSocre;
+    this.tvTitle = tvTitle;
+    this.viewHighScore = viewHighScore;
   }
 
   @NonNull

@@ -13,7 +13,13 @@ public class ActivityHighscoreBindingImpl extends ActivityHighscoreBinding  {
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
         sIncludes = null;
-        sViewsWithIds = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.tv_title, 1);
+        sViewsWithIds.put(R.id.view_high_score, 2);
+        sViewsWithIds.put(R.id.tv_high_score_name, 3);
+        sViewsWithIds.put(R.id.tv_high_socre, 4);
+        sViewsWithIds.put(R.id.empty_high_score, 5);
+        sViewsWithIds.put(R.id.btn_high_score_exit, 6);
     }
     // views
     @NonNull
@@ -24,10 +30,16 @@ public class ActivityHighscoreBindingImpl extends ActivityHighscoreBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityHighscoreBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 1, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
     }
     private ActivityHighscoreBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (android.widget.ImageView) bindings[6]
+            , (android.widget.TextView) bindings[5]
+            , (android.widget.TextView) bindings[3]
+            , (android.widget.TextView) bindings[4]
+            , (android.widget.TextView) bindings[1]
+            , (android.widget.LinearLayout) bindings[2]
             );
         this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
         this.mboundView0.setTag(null);

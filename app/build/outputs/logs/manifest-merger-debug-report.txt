@@ -77,12 +77,12 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Sa
 		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:11:9-52
-activity#com.example.chickenshooter.MainActivity
+activity#com.example.chickenshooter.activity.MainActivity
 ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:12:9-20:20
 	android:screenOrientation
 		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:14:13-49
 	android:name
-		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:13:13-41
+		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:13:13-50
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
@@ -93,30 +93,30 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
 		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:18:27-74
-activity#com.example.chickenshooter.HelpActivity
+activity#com.example.chickenshooter.activity.HelpActivity
 ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:21:9-23:52
 	android:screenOrientation
 		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:23:13-49
 	android:name
-		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:22:13-41
-activity#com.example.chickenshooter.HighScoreActivity
+		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:22:13-50
+activity#com.example.chickenshooter.activity.HighScoreActivity
 ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:24:9-26:52
 	android:screenOrientation
 		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:26:13-49
 	android:name
-		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:25:13-46
-activity#com.example.chickenshooter.SettingActivity
+		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:25:13-55
+activity#com.example.chickenshooter.activity.SettingActivity
 ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:27:9-29:52
 	android:screenOrientation
 		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:29:13-49
 	android:name
-		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:28:13-44
-activity#com.example.chickenshooter.GameActivity
+		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:28:13-53
+activity#com.example.chickenshooter.activity.GameActivity
 ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:30:9-32:51
 	android:screenOrientation
 		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:32:13-49
 	android:name
-		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:31:13-41
+		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:31:13-50
 uses-sdk
 INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml

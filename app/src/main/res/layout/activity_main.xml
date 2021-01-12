@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
@@ -11,7 +10,28 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="@dimen/margin_32"
-        tools:context=".MainActivity">
+        tools:context=".activity.MainActivity">
+
+        <TextView
+            android:id="@+id/tv_wellcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_64"
+            android:fontFamily="@font/atari_pixel"
+            android:text="@string/wellcome"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_wellcome"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_8"
+            android:fontFamily="@font/atari_pixel"
+            android:text="@string/s_a_m_v_u"
+            android:textSize="@dimen/textSize28" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -63,7 +83,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:background="@color/transcolor"
-            android:src="@drawable/ic_sound_on" />
+            android:src="@drawable/ic_sound_on"
+            tools:ignore="ContentDescription" />
 
         <ImageButton
             android:id="@+id/btn_setting"
@@ -73,7 +94,8 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:background="@color/transcolor"
-            android:src="@drawable/ic_setting" />
+            android:src="@drawable/ic_setting"
+            tools:ignore="ContentDescription" />
 
     </RelativeLayout>
 </layout>

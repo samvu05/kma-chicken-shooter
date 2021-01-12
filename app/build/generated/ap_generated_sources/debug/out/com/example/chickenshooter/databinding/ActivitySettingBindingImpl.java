@@ -13,7 +13,12 @@ public class ActivitySettingBindingImpl extends ActivitySettingBinding  {
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
         sIncludes = null;
-        sViewsWithIds = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.tv_setting, 1);
+        sViewsWithIds.put(R.id.tv_title_yourname, 2);
+        sViewsWithIds.put(R.id.btn_edit_name, 3);
+        sViewsWithIds.put(R.id.tv_name, 4);
+        sViewsWithIds.put(R.id.btn_setting_exit, 5);
     }
     // views
     @NonNull
@@ -24,10 +29,15 @@ public class ActivitySettingBindingImpl extends ActivitySettingBinding  {
     // Inverse Binding Event Handlers
 
     public ActivitySettingBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 1, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds));
     }
     private ActivitySettingBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (android.widget.ImageView) bindings[3]
+            , (android.widget.ImageView) bindings[5]
+            , (android.widget.TextView) bindings[4]
+            , (android.widget.TextView) bindings[1]
+            , (android.widget.TextView) bindings[2]
             );
         this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
         this.mboundView0.setTag(null);

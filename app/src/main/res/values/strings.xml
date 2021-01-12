@@ -5,4 +5,9 @@
     <string name="help">HELP</string>
     <string name="exit">EXIT</string>
     <string name="setting">SETTING</string>
+    <string name="wellcome">Wellcome</string>
+    <string name="anonymous">ANONYMOUS</string>
+    <string name="your_name">Your name :</string>
+    <string name="s_a_m_v_u">s a m v u</string>
+    <string name="highscore_empty">EMPTY !</string>
 </resources>

@@ -19,7 +19,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.ChickenShooter" >
         <activity
-            android:name="com.example.chickenshooter.MainActivity"
+            android:name="com.example.chickenshooter.activity.MainActivity"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,16 +28,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.chickenshooter.HelpActivity"
+            android:name="com.example.chickenshooter.activity.HelpActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.chickenshooter.HighScoreActivity"
+            android:name="com.example.chickenshooter.activity.HighScoreActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.chickenshooter.SettingActivity"
+            android:name="com.example.chickenshooter.activity.SettingActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.chickenshooter.GameActivity"
+            android:name="com.example.chickenshooter.activity.GameActivity"
             android:screenOrientation="portrait" />
     </application>
 

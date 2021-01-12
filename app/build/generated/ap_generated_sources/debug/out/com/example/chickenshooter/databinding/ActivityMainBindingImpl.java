@@ -14,12 +14,14 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.btn_play, 1);
-        sViewsWithIds.put(R.id.btn_high_score, 2);
-        sViewsWithIds.put(R.id.btn_help, 3);
-        sViewsWithIds.put(R.id.btn_exit, 4);
-        sViewsWithIds.put(R.id.btn_sound, 5);
-        sViewsWithIds.put(R.id.btn_setting, 6);
+        sViewsWithIds.put(R.id.tv_wellcome, 1);
+        sViewsWithIds.put(R.id.tv_name, 2);
+        sViewsWithIds.put(R.id.btn_play, 3);
+        sViewsWithIds.put(R.id.btn_high_score, 4);
+        sViewsWithIds.put(R.id.btn_help, 5);
+        sViewsWithIds.put(R.id.btn_exit, 6);
+        sViewsWithIds.put(R.id.btn_sound, 7);
+        sViewsWithIds.put(R.id.btn_setting, 8);
     }
     // views
     @NonNull
@@ -30,16 +32,18 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityMainBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 9, sIncludes, sViewsWithIds));
     }
     private ActivityMainBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (android.widget.TextView) bindings[6]
+            , (android.widget.TextView) bindings[5]
             , (android.widget.TextView) bindings[4]
             , (android.widget.TextView) bindings[3]
+            , (android.widget.ImageButton) bindings[8]
+            , (android.widget.ImageButton) bindings[7]
             , (android.widget.TextView) bindings[2]
             , (android.widget.TextView) bindings[1]
-            , (android.widget.ImageButton) bindings[6]
-            , (android.widget.ImageButton) bindings[5]
             );
         this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
         this.mboundView0.setTag(null);

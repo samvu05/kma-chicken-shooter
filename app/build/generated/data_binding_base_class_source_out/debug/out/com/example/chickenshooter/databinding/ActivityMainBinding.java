@@ -33,9 +33,15 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   @NonNull
   public final ImageButton btnSound;
 
+  @NonNull
+  public final TextView tvName;
+
+  @NonNull
+  public final TextView tvWellcome;
+
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
       TextView btnExit, TextView btnHelp, TextView btnHighScore, TextView btnPlay,
-      ImageButton btnSetting, ImageButton btnSound) {
+      ImageButton btnSetting, ImageButton btnSound, TextView tvName, TextView tvWellcome) {
     super(_bindingComponent, _root, _localFieldCount);
     this.btnExit = btnExit;
     this.btnHelp = btnHelp;
@@ -43,6 +49,8 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
     this.btnPlay = btnPlay;
     this.btnSetting = btnSetting;
     this.btnSound = btnSound;
+    this.tvName = tvName;
+    this.tvWellcome = tvWellcome;
   }
 
   @NonNull
