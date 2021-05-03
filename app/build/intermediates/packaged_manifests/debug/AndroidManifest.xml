@@ -39,6 +39,9 @@
         <activity
             android:name="com.example.chickenshooter.activity.GameActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.chickenshooter.activity.GameOverActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

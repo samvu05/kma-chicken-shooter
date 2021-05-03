@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
@@ -17,10 +18,14 @@ public abstract class ActivityHelpBinding extends ViewDataBinding {
   @NonNull
   public final ImageView btnHelpExit;
 
+  @NonNull
+  public final TextView tvTitle;
+
   protected ActivityHelpBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageView btnHelpExit) {
+      ImageView btnHelpExit, TextView tvTitle) {
     super(_bindingComponent, _root, _localFieldCount);
     this.btnHelpExit = btnHelpExit;
+    this.tvTitle = tvTitle;
   }
 
   @NonNull

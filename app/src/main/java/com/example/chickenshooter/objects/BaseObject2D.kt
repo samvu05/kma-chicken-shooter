@@ -1,15 +1,14 @@
 package com.example.chickenshooter.objects
 
-import android.content.Context
 import android.graphics.Rect
-import com.example.chickenshooter.enum.Ori
-
-open class BaseObject2D(context: Context) {
+/**
+ * Created by Dinh Sam Vu on 1/4/2021.
+ */
+open class BaseObject2D {
     var x: Float = 0f
     var y: Float = 0f
     var width = 0f
     var height = 0f
-    lateinit var ori: Ori
 
 
     fun getCollisionShape(): Rect {

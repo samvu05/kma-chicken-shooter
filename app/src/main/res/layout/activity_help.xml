@@ -10,17 +10,38 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/margin_32"
         tools:context=".activity.MainActivity">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_play5" />
+
+
         <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_64"
+            android:background="@drawable/bg_titile"
+            android:fontFamily="@font/atari_pixel"
+            android:gravity="center"
+            android:text="@string/help"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/textSize32" />
+
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/margin_32"
-            android:fontFamily="@font/atari_pixel"
-            android:text="@string/help"
-            android:textSize="@dimen/textSize28" />
+            android:layout_below="@id/tv_title"
+            android:layout_above="@id/btn_help_exit"
+            android:layout_margin="@dimen/margin_16"
+            android:src="@drawable/bg_help"
+
+            />
+
 
         <ImageView
             android:id="@+id/btn_help_exit"
@@ -29,7 +50,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="@dimen/margin_64"
-            android:src="@drawable/icon_fingure" />
+            android:src="@drawable/icc_btn_close" />
 
     </RelativeLayout>
 </layout>

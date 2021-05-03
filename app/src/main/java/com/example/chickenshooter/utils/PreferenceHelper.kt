@@ -3,7 +3,7 @@ package com.example.chickenshooter.utils
 import android.content.Context
 import android.content.SharedPreferences
 
-open class PreferenceHelper(private val context: Context, name: String) {
+open class PreferenceHelper(context: Context, name: String) {
     private var sharedPreferences: SharedPreferences =
         context.getSharedPreferences(name, Context.MODE_PRIVATE)
 

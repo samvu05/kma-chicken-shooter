@@ -6,22 +6,22 @@ import android.graphics.BitmapFactory
 import com.example.chickenshooter.R
 import com.example.chickenshooter.gameview.GameView.Companion.screenRatioX
 import com.example.chickenshooter.gameview.GameView.Companion.screenRatioY
-
-class Chicken(context: Context) : BaseObject2D(context) {
+/**
+ * Created by Dinh Sam Vu on 1/4/2021.
+ */
+class Chicken(context: Context) : BaseObject2D() {
     var targetList = arrayOfNulls<Bitmap>(15)
     var targetFrame: Int = 0
+    var livesCount = 1
 
     init {
-        targetList[0] = BitmapFactory.decodeResource(context.resources, R.drawable.yellowtarget_1)
-        targetList[1] = BitmapFactory.decodeResource(context.resources, R.drawable.yellowtarget_1)
-        targetList[2] = BitmapFactory.decodeResource(context.resources, R.drawable.yellowtarget_1)
-        targetList[3] = BitmapFactory.decodeResource(context.resources, R.drawable.yellowtarget_1)
-        targetList[4] = BitmapFactory.decodeResource(context.resources, R.drawable.yellowtarget_1)
-        targetList[5] = BitmapFactory.decodeResource(context.resources, R.drawable.yellowtarget_2)
-        targetList[6] = BitmapFactory.decodeResource(context.resources, R.drawable.yellowtarget_2)
-        targetList[7] = BitmapFactory.decodeResource(context.resources, R.drawable.yellowtarget_2)
-        targetList[8] = BitmapFactory.decodeResource(context.resources, R.drawable.yellowtarget_2)
-        targetList[9] = BitmapFactory.decodeResource(context.resources, R.drawable.yellowtarget_2)
+        targetList[0] = BitmapFactory.decodeResource(context.resources, R.drawable.asset_chicken1)
+        targetList[1] = BitmapFactory.decodeResource(context.resources, R.drawable.asset_chicken2)
+        targetList[2] = BitmapFactory.decodeResource(context.resources, R.drawable.asset_chicken3)
+        targetList[3] = BitmapFactory.decodeResource(context.resources, R.drawable.asset_chicken4)
+        targetList[4] = BitmapFactory.decodeResource(context.resources, R.drawable.asset_chicken5)
+        targetList[5] = BitmapFactory.decodeResource(context.resources, R.drawable.asset_chicken6)
+        targetList[6] = BitmapFactory.decodeResource(context.resources, R.drawable.asset_chicken7)
 
         width = targetList[0]!!.width * screenRatioX
         height = targetList[0]!!.height * screenRatioY

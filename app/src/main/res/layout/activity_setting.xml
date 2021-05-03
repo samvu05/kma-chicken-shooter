@@ -9,18 +9,26 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/margin_32"
         tools:context=".activity.MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_play5" />
 
         <TextView
             android:id="@+id/tv_setting"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
+            android:background="@drawable/bg_titile"
+            android:gravity="center"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/margin_32"
+            android:layout_marginTop="@dimen/margin_100"
             android:fontFamily="@font/atari_pixel"
             android:text="@string/setting"
-            android:textSize="@dimen/textSize28" />
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/textSize32" />
 
 
         <TextView
@@ -28,9 +36,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/tv_setting"
-            android:layout_marginTop="@dimen/margin_84"
+            android:layout_marginLeft="@dimen/margin_32"
+            android:layout_marginTop="@dimen/margin_100"
             android:fontFamily="@font/atari_pixel"
             android:text="@string/your_name"
+            android:textColor="@color/text_color_white"
             android:textSize="@dimen/textSize20"
             tools:ignore="SpUsage" />
 
@@ -38,6 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_below="@id/tv_title_yourname"
+            android:layout_marginLeft="@dimen/margin_32"
             android:layout_marginTop="4dp"
             android:orientation="horizontal">
 
@@ -47,8 +58,9 @@
                 android:layout_height="50dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_32"
                 android:scaleType="fitXY"
-                android:src="@drawable/icon_fingure"
+                android:src="@drawable/ic_btn_info"
                 tools:ignore="ContentDescription" />
 
             <TextView
@@ -59,7 +71,8 @@
                 android:gravity="center"
                 android:minHeight="40sp"
                 android:text="@string/s_a_m_v_u"
-                android:textSize="@dimen/textSize28"
+                android:textColor="@color/text_color_white"
+                android:textSize="28sp"
                 tools:ignore="RelativeOverlap" />
 
 
@@ -71,8 +84,8 @@
             android:layout_height="60dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="@dimen/margin_64"
-            android:src="@drawable/icon_fingure" />
+            android:layout_marginBottom="@dimen/margin_100"
+            android:src="@drawable/icc_btn_close" />
 
 
     </RelativeLayout>

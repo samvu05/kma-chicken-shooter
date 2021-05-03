@@ -2,22 +2,24 @@ package com.example.chickenshooter.gameview
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.Intent
 import android.graphics.*
 import android.media.AudioManager
 import android.media.SoundPool
-import android.util.Log
 import android.view.MotionEvent
 import android.view.SurfaceView
 import android.view.ViewConfiguration
 import com.example.chickenshooter.R
 import com.example.chickenshooter.activity.GameActivity
-import com.example.chickenshooter.enum.BulletLine
-import com.example.chickenshooter.enum.Ori
+import com.example.chickenshooter.activity.GameOverActivity
+import com.example.chickenshooter.enum.ItemType
 import com.example.chickenshooter.objects.*
 import java.util.*
 import kotlin.math.abs
 
-
+/**
+ * Created by Dinh Sam Vu on 1/2/2021.
+ */
 @SuppressLint("ViewConstructor", "NewApi")
 @Suppress("DEPRECATION", "UNREACHABLE_CODE")
 class GameView(context: Context, point: Point) : SurfaceView(context), Runnable {
@@ -34,6 +36,7 @@ class GameView(context: Context, point: Point) : SurfaceView(context), Runnable 
     private var mContext: Context = context
     private var random: Random = Random()
     private var isPlaying = false
+    private var isReady = false
     private var isGameOver = false
     private lateinit var thread: Thread
     private var currentTime: Long = 0
@@ -45,16 +48,25 @@ class GameView(context: Context, point: Point) : SurfaceView(context), Runnable 
     private var highScorePaint = Paint()
     private var heartIcon: Bitmap
     private var listAnimHeart = arrayListOf<AnimHeart>()
-    private var level = 1
-    private var bulletType = BulletLine.THREE_LINE
-
+    private var level = 1 // max 3
+    private var bulletSpeed = 1 //max 4
+    private var bulletLine = 1 //max 3
     private var lives = 4
+    private var listBonusItem = arrayListOf<BonusItem>()
+    private var listBonusItemType = listOf(
+        ItemType.LINE_BUFF,
+        ItemType.LINE_NEFF,
+        ItemType.SPEED_BUFF,
+        ItemType.SPEED_NEFF
+    )
 
     private var lastChickenBorn: Long = 0
     private var lastBombBorn: Long = 0
+    private var lastBonusItemBorn: Long = 0
     private var lastBulletBorn: Long = 0
-    private var lastBulletMove: Long = 0
     private var lastAnimHeartBorn: Long = 0
+
+    private var readyButton: ReadyButton
 
     //  Mark Figure & Control.
     private var figure: Figure
@@ -67,12 +79,11 @@ class GameView(context: Context, point: Point) : SurfaceView(context), Runnable 
     private var currentY = 0f
 
     private var fireShotSoundId: Int = 0
+    private var bombSoundID: Int = 0
 
     // Mark Chicken
-    private var listBullet: ArrayList<SingleBullet>
+    private var listBullet: ArrayList<Bullet>
     private var listChicken: ArrayList<Chicken>
-    private var listChickenLeft = arrayListOf<Chicken>()
-    private var listChickenRight = arrayListOf<Chicken>()
     private var explosionList: ArrayList<Explosion>
 
     private var listBomb: ArrayList<FireBomb>
@@ -80,7 +91,6 @@ class GameView(context: Context, point: Point) : SurfaceView(context), Runnable 
 
     private var background1: Background
     private var background2: Background
-    private var lastBackgroundMove: Long = 0
 
 
     init {
@@ -93,7 +103,7 @@ class GameView(context: Context, point: Point) : SurfaceView(context), Runnable 
         background2 = Background(screenWidth, screenHeight, resources)
         background1.y = screenHeight
         background2.y = 0f
-        heartIcon = BitmapFactory.decodeResource(mContext.resources, R.drawable.icon_heart_read)
+        heartIcon = BitmapFactory.decodeResource(mContext.resources, R.drawable.asset_heart1)
         heartIcon =
             Bitmap.createScaledBitmap(
                 heartIcon,
@@ -103,6 +113,10 @@ class GameView(context: Context, point: Point) : SurfaceView(context), Runnable 
             )
 
         highScore = activity.preferenceHelper.getHighscore()
+
+        readyButton = ReadyButton(mContext)
+        readyButton.x = screenWidth / 2 - readyButton.width / 2
+        readyButton.y = screenHeight / 2 - readyButton.height / 2
 
         paint = Paint()
         paint.textSize = 128f
@@ -121,6 +135,7 @@ class GameView(context: Context, point: Point) : SurfaceView(context), Runnable 
 
         soundPool = SoundPool(3, AudioManager.STREAM_MUSIC, 0)
         fireShotSoundId = soundPool.load(context, R.raw.fireshot, 1)
+        bombSoundID = soundPool.load(context, R.raw.bomb, 1)
 
 
 
@@ -156,10 +171,19 @@ class GameView(context: Context, point: Point) : SurfaceView(context), Runnable 
     private fun touchStart() {
         currentX = motionTouchEventX
         currentY = motionTouchEventY
+        if (!isReady) {
+            if (motionTouchEventX in readyButton.x..readyButton.x + readyButton.width
+                && motionTouchEventY in readyButton.y..readyButton.y + readyButton.width
+            ) {
+                isReady = true
+            }
+        }
     }
 
 
     private fun touchMove() {
+        if (!isReady) return
+
         val dx = abs(motionTouchEventX - currentX)
         val dy = abs(motionTouchEventY - currentY)
         if (dx >= touchTolerance || dy >= touchTolerance) {
@@ -178,113 +202,140 @@ class GameView(context: Context, point: Point) : SurfaceView(context), Runnable 
             val canvas = holder.lockCanvas()
             canvas.drawBitmap(background1.background, background1.x, background1.y, paint)
             canvas.drawBitmap(background2.background, background2.x, background2.y, paint)
-            canvas.drawBitmap(figure.fingure, figure.x, figure.y, paint)
+
+            if (!isReady && !isGameOver) {
+                canvas.drawBitmap(readyButton.readyButton, readyButton.x, readyButton.y, paint)
+            }
             canvas.drawText("HighScore: $highScore", 20f, 60f, scorePaint)
             canvas.drawText("Score: $score", 20f, 120f, scorePaint)
             canvas.drawText("Live: ", 20f, 180f, scorePaint)
-
             for (i in 1..lives) {
                 canvas.drawBitmap(heartIcon, 210f + i * heartIcon.width, 140f, null)
             }
-
+            drawFigure(canvas)
             for (bullet in listBullet) {
                 canvas.drawBitmap(bullet.bullet, bullet.x, bullet.y, paint)
             }
 
             drawExplodes(canvas)
             drawAllChicken(canvas)
-            drawAllBomb(canvas)
+            drawAllBombAndBonusItem(canvas)
             drawAnimHeart(canvas)
             holder.unlockCanvasAndPost(canvas)
         }
     }
 
+    private fun drawFigure(canvas: Canvas) {
+        canvas.drawBitmap(
+            figure.getBitmap(),
+            (figure.x),
+            (figure.y),
+            null
+        )
+        figure.targetFrame++
+        if (figure.targetFrame > 6) figure.targetFrame = 0
+    }
+
+
     private fun fireBullets() {
-        if (currentTime - lastBulletBorn < 20) {
+        //stockSpeed == 20
+        if (currentTime - lastBulletBorn < if (bulletSpeed < 4) 25 - 5 * bulletSpeed else 5) {
             return
         }
         lastBulletBorn = currentTime
-        when (bulletType) {
-            BulletLine.ONE_LINE -> {
-                val bullet = SingleBullet(mContext)
+        when (bulletLine) {
+            1 -> {
+                val bullet = Bullet(mContext)
                 bullet.x = figure.x + figureWidth / 2 - bullet.width / 2
                 bullet.y = figure.y
                 listBullet.add(bullet)
             }
-            BulletLine.TWO_LINE -> {
+            2 -> {
                 listBullet.addAll(
                     listOf(
-                        SingleBullet(mContext).apply {
+                        Bullet(mContext).apply {
                             x = figure.x - bullet.width / 2
                             y = figure.y
                         },
-                        SingleBullet(mContext).apply {
+                        Bullet(mContext).apply {
                             x = figure.x + figure.width - bullet.width / 2
                             y = figure.y
                         })
                 )
             }
-            BulletLine.THREE_LINE -> {
+            else -> {
                 listBullet.addAll(
                     listOf(
-                        SingleBullet(mContext).apply {
+                        Bullet(mContext).apply {
                             x = figure.x - bullet.width / 2
                             y = figure.y
                         },
-                        SingleBullet(mContext).apply {
+                        Bullet(mContext).apply {
                             x = figure.x + figure.width - bullet.width / 2
                             y = figure.y
                         },
-                        SingleBullet(mContext).apply {
+                        Bullet(mContext).apply {
                             x = figure.x + figure.width / 2 - bullet.width / 2
                             y = figure.y
                         })
                 )
             }
-
-            else -> return
         }
 
-        if (fireShotSoundId != 0) {
+        if (fireShotSoundId != 0 && !activity.isMute) {
             soundPool.play(fireShotSoundId, 0.5f, 0.5f, 0, 0, 1f)
         }
     }
 
     private fun moveAllBullets() {
-        val trashBullet: MutableList<SingleBullet> = arrayListOf()
+        val trashBullet: MutableList<Bullet> = arrayListOf()
         val trashChicken: MutableList<Chicken> = arrayListOf()
 
         for (bullet in listBullet) {
             if (bullet.y < 0) trashBullet.add(bullet)
             bullet.y -= 25 * screenRatioY
+            if (bullet.y < -100f) {
+                trashBullet.add(bullet)
+            }
             for (chicken in listChicken) {
                 if (Rect.intersects(
                         chicken.getCollisionShape(),
                         bullet.getCollisionShape()
                     )
                 ) {
-                    score++
-                    if (score > highScore) {
-                        highScore = score
-                        activity.preferenceHelper.setHighscore(score)
-                        activity.preferenceHelper.setTopScoreName(activity.preferenceHelper.getName())
-                    }
-                    explosionList.add(Explosion(mContext).apply {
-                        x = chicken.x + chicken.width / 2 - this.width
-                        y = chicken.y + chicken.height / 2 - this.height
-                    })
-                    trashChicken.add(chicken)
-                    chicken.x = -300f
+                    trashBullet.add(bullet)
                     bullet.y = -100f
-                    if (fireShotSoundId != 0) {
-                        soundPool.play(fireShotSoundId, 1f, 1f, 0, 0, 1f)
+                    if (bombSoundID != 0 && !activity.isMute) {
+                        soundPool.play(bombSoundID, 0.8f, 0.8f, 0, 0, 1f)
                     }
+
+                    chicken.livesCount--
+                    if (chicken.livesCount == 0) {
+                        score++
+                        if (score > highScore) {
+                            highScore = score
+                            activity.preferenceHelper.setHighscore(score)
+                            activity.preferenceHelper.setTopScoreName(activity.preferenceHelper.getName())
+                        }
+                        explosionList.add(Explosion(mContext).apply {
+                            x = chicken.x + chicken.width / 2 - this.width / 2
+                            y = chicken.y + chicken.height / 2 - this.height / 2
+                        })
+                        trashChicken.add(chicken)
+                        chicken.x = -300f
+                        if (fireShotSoundId != 0 && !activity.isMute) {
+                            soundPool.play(fireShotSoundId, 1f, 1f, 0, 0, 1f)
+                        }
+                    }
+
                 }
             }
 
         }
         for (bullet in trashBullet) listBullet.remove(bullet)
+        if (trashBullet.size > 50) trashBullet.removeAll(trashBullet)
         for (chicken in trashChicken) listChicken.remove(chicken)
+        if (trashChicken.size > 50) trashChicken.removeAll(trashChicken)
     }
 
     private fun drawExplodes(canvas: Canvas) {
@@ -297,7 +348,7 @@ class GameView(context: Context, point: Point) : SurfaceView(context), Runnable 
                     null
                 )
                 explosionList[j].explosionFrame++
-                if (explosionList[j].explosionFrame > 6) {
+                if (explosionList[j].explosionFrame > 7) {
                     explosionList.removeAt(j)
                 }
             }
@@ -305,31 +356,62 @@ class GameView(context: Context, point: Point) : SurfaceView(context), Runnable 
     }
 
     private fun bornChicken() {
-        if (currentTime - lastChickenBorn < 40) {
+        if (currentTime - lastChickenBorn < if (level < 3) 30 - (level - 1) * 5 else 20) {
             return
         }
         lastChickenBorn = currentTime
+        when (level) {
+            1 -> {
+                listChicken.add(Chicken(mContext).apply {
+                    x = random.nextInt((screenWidth - this.width - 200).toInt() + 50).toFloat()
+                    y = -this.height
+                    livesCount = 1
+                })
+            }
+            else -> {
+                val firstChickenX = random.nextInt((screenWidth - 350).toInt() + 50).toFloat()
+                listChicken.add(Chicken(mContext).apply {
+                    x = firstChickenX
+                    y = -this.height
+                    livesCount = if (level == 3) 2 else 5
+                })
 
-        listChicken.add(Chicken(mContext).apply {
-            x = random.nextInt((screenWidth - width).toInt()).toFloat()
-            y = 0f
-        })
+                listChicken.add(Chicken(mContext).apply {
+                    x =
+                        if (firstChickenX < screenWidth / 2) {
+                            random.nextInt((screenWidth - firstChickenX - this.width).toInt()) + firstChickenX - 50
+                        } else {
+                            random.nextInt((firstChickenX - this.width).toInt()).toFloat()
+                        }
+                    y = -this.height
+                    livesCount = if (level == 2) 2 else 5
+                })
+
+            }
+        }
     }
 
     private fun moveAllChicken() {
         val trash: MutableList<Chicken> = arrayListOf()
         for (chicken in listChicken) {
-            chicken.y += 5
+            when (level) {
+                1 -> chicken.y += 5
+                2 -> chicken.y += 8
+                else -> chicken.y += 17
+            }
+
+
             if (chicken.y > screenHeight) {
                 trash.add(chicken)
                 lives--
+                if (lives == 0) {
+                    gameOver()
+                }
             }
 
             if (Rect.intersects(chicken.getCollisionShape(), figure.getCollisionShape())) {
                 trash.add(chicken)
-                soundPool.play(fireShotSoundId, 1f, 1f, 0, 0, 1f)
-                isGameOver = true
-                Log.d("logDB", "game over")
+                gameOver()
             }
         }
         for (chicken in trash) listChicken.remove(chicken)
@@ -346,43 +428,111 @@ class GameView(context: Context, point: Point) : SurfaceView(context), Runnable 
             )
 
             chicken.targetFrame++
-            if (chicken.targetFrame > 9) chicken.targetFrame = 0
+            if (chicken.targetFrame > 6) chicken.targetFrame = 0
         }
     }
 
-    private fun fireBomb() {
-        if (currentTime - lastBombBorn < 100 || listChicken.size < 3) {
+    private fun fireBombAndBonusItem() {
+        if (listChicken.size < 3 || currentTime - lastBombBorn < if (level == 1) 75 else if (level == 2) 50 else 20) {
             return
         }
         lastBombBorn = currentTime
 
         val i = random.nextInt(listChicken.size)
-        val chickenFired = listChicken[i]
-
+        var chickenFired = listChicken[i]
         listBomb.add(FireBomb(mContext).apply {
             x = chickenFired.x + chickenFired.width - width
             y = chickenFired.y
+        })
+
+        if (listChicken.size < 3 || currentTime - lastBonusItemBorn < if (level == 1) 150 else if (level == 2) 100 else 50) {
+            return
+        }
+        lastBonusItemBorn = currentTime
+
+        var j = random.nextInt(listChicken.size)
+        while (j == i) {
+            j = random.nextInt(listChicken.size)
+        }
+        chickenFired = listChicken[j]
+        listBonusItem.add(BonusItem(mContext).apply {
+            width = 100f
+            height = 100f
+            x = chickenFired.x + chickenFired.width - width
+            y = chickenFired.y
+            listBonusItemType = listOf(
+                ItemType.LINE_BUFF,
+                ItemType.LINE_NEFF,
+                ItemType.SPEED_BUFF,
+                ItemType.SPEED_NEFF
+            )
+            if (bulletLine == 1)
+                listBonusItemType = listBonusItemType.filter { it != ItemType.LINE_NEFF }
+            if (bulletLine == 3) {
+                listBonusItemType = listBonusItemType.filter { it != ItemType.LINE_BUFF }
+            }
+            if (bulletSpeed == 1) {
+                listBonusItemType = listBonusItemType.filter { it != ItemType.SPEED_NEFF }
+            }
+            if (bulletSpeed == 4) {
+                listBonusItemType = listBonusItemType.filter { it != ItemType.SPEED_BUFF }
+            }
+            if (listBonusItemType.isNotEmpty()) {
+                itemType = listBonusItemType.random()
+            }
+
         })
     }
 
     private fun moveAllBomb() {
         val trash: MutableList<FireBomb> = arrayListOf()
         for (bomb in listBomb) {
-            bomb.y += 20
+            bomb.y += if (level == 1) 15 else if (level == 2) 20 else 30
             if (bomb.y > screenHeight) trash.add(bomb)
 
             if (Rect.intersects(bomb.getCollisionShape(), figure.getCollisionShape())) {
                 trash.add(bomb)
-                soundPool.play(fireShotSoundId, 1f, 1f, 0, 0, 1f)
-                isGameOver = true
-                Log.d("logDB", "game over")
+                if (bombSoundID != 0 && !activity.isMute) {
+                    soundPool.play(bombSoundID, 0.8f, 0.8f, 0, 0, 1f)
+                }
+                explosionList.add(Explosion(mContext).apply {
+                    x = figure.x + figure.width / 2 - this.width / 2
+                    y = figure.y + figure.height / 2 - this.height / 2
+                })
+                lives--
+                if (lives == 0) gameOver()
             }
         }
         for (bomb in trash) listBomb.remove(bomb)
         if (trash.size > 100) trash.removeAll(trash)
     }
 
-    private fun drawAllBomb(canvas: Canvas) {
+    private fun moveAllBonusItem() {
+        val trash: MutableList<BonusItem> = arrayListOf()
+        for (item in listBonusItem) {
+            item.y += if (level == 1) 10 else if (level == 2) 15 else 25
+            if (item.y > screenHeight) trash.add(item)
+
+            if (Rect.intersects(item.getCollisionShape(), figure.getCollisionShape())) {
+                trash.add(item)
+                if (fireShotSoundId != 0 && !activity.isMute) {
+                    soundPool.play(fireShotSoundId, 1f, 1f, 0, 0, 1f)
+                }
+                when (item.itemType) {
+                    ItemType.SPEED_BUFF -> if (bulletSpeed < 4) bulletSpeed++
+                    ItemType.SPEED_NEFF -> if (bulletSpeed > 1) bulletSpeed--
+                    ItemType.LINE_BUFF -> if (bulletLine < 3) bulletLine++
+                    ItemType.LINE_NEFF -> if (bulletLine > 1) bulletLine--
+                }
+            }
+        }
+
+        for (item in trash) listBonusItem.remove(item)
+        if (trash.size > 100) trash.removeAll(trash)
+    }
+
+
+    private fun drawAllBombAndBonusItem(canvas: Canvas) {
         for (bomb in listBomb) {
             canvas.drawBitmap(
                 bomb.getBitmap(),
@@ -394,15 +544,23 @@ class GameView(context: Context, point: Point) : SurfaceView(context), Runnable 
             bomb.targetFrame++
             if (bomb.targetFrame > 6) bomb.targetFrame = 0
         }
+        for (item in listBonusItem) {
+            canvas.drawBitmap(
+                item.getBitmap(),
+                (item.x),
+                (item.y),
+                null
+            )
+        }
     }
 
     private fun addRandomAnimHeart() {
-        if (currentTime - lastAnimHeartBorn < 400 || listAnimHeart.size >= 1 || lives >= 4) {
+        if (currentTime - lastAnimHeartBorn < 500 || listAnimHeart.size == 1 || lives >= 4) {
             return
         }
         lastAnimHeartBorn = currentTime
         listAnimHeart.add(AnimHeart(mContext).apply {
-            x = 50f + random.nextInt(screenWidth.toInt() - 100)
+            x = 50f + random.nextInt(screenWidth.toInt() - 200)
             y = 200f + random.nextInt(screenHeight.toInt() - 300)
         })
     }
@@ -417,7 +575,7 @@ class GameView(context: Context, point: Point) : SurfaceView(context), Runnable 
                 null
             )
             animHeart.targetFrame++
-            if (animHeart.targetFrame > 6) animHeart.targetFrame = 0
+            if (animHeart.targetFrame > 2) animHeart.targetFrame = 0
 
             if (Rect.intersects(animHeart.getCollisionShape(), figure.getCollisionShape())) {
                 if (lives < 4) lives++
@@ -429,11 +587,6 @@ class GameView(context: Context, point: Point) : SurfaceView(context), Runnable 
 
 
     private fun updateBackground() {
-        if (currentTime - lastBackgroundMove < 1) {
-            return
-        }
-        lastBackgroundMove = currentTime
-
         background1.y += (5 * screenRatioY).toInt()
         background2.y += (5 * screenRatioY).toInt()
 
@@ -445,41 +598,54 @@ class GameView(context: Context, point: Point) : SurfaceView(context), Runnable 
         }
     }
 
-
     override fun run() {
         while (isPlaying) {
-            updateBackground()
-            fireBullets()
-            moveAllBullets()
+            if (isReady && !isGameOver) {
+                fireBullets()
+                moveAllBullets()
 
-            bornChicken()
-            moveAllChicken()
+                bornChicken()
+                moveAllChicken()
 
-            fireBomb()
-            moveAllBomb()
+                fireBombAndBonusItem()
+                moveAllBomb()
+                moveAllBonusItem()
 
-            addRandomAnimHeart()
+                addRandomAnimHeart()
 
-            drawAll()
-
-            currentTime += 1
-            try {
-                Thread.sleep(1)
-            } catch (e: InterruptedException) {
-                e.printStackTrace()
+                currentTime += 1
+                try {
+                    Thread.sleep(1)
+                } catch (e: InterruptedException) {
+                    e.printStackTrace()
+                }
             }
+            updateMainValue()
+            updateBackground()
+            drawAll()
         }
 
     }
 
+    private fun updateMainValue() {
+        if (currentTime in 3001..8999) {
+            level = 2
+        }
+        if (currentTime >= 9000) {
+            level = 3
+        }
+    }
+
     fun resume() {
         isPlaying = true
+        isReady = false
         thread = Thread(this)
         thread.start()
     }
 
     fun pause() {
         try {
+            isReady = false
             isPlaying = false
             thread.join()
         } catch (e: InterruptedException) {
@@ -491,82 +657,12 @@ class GameView(context: Context, point: Point) : SurfaceView(context), Runnable 
         isPlaying = false
     }
 
-    private fun bornChicken2() {
-        if (currentTime - lastChickenBorn < 50) {
-            return
-        }
-        lastChickenBorn = currentTime
-        if (listChicken.size > 20) return
-        for (i in 0..3) {
-            when (i) {
-                0 -> {
-                    listChickenLeft.add(Chicken(mContext).apply {
-                        width = (screenWidth - 100) / 10
-                        height = width
-                        ori = Ori.LEFT
-                        x = 0f
-                        y = height.toFloat() + 50f
-                    })
-                }
-                2 -> {
-                    listChickenLeft.add(Chicken(mContext).apply {
-                        width = ((screenWidth - 100) / 5)
-                        height = width
-                        ori = Ori.LEFT
-                        x = 0f
-                        y = 3 * height.toFloat() + 50f
-                    })
-                }
-                1 -> {
-                    listChickenRight.add(Chicken(mContext).apply {
-                        width = ((screenWidth - 100) / 5)
-                        height = width
-                        ori = Ori.RIGHT
-                        x = screenWidth
-                        y = 5 * height.toFloat() + 50f
-                    })
-                }
-                3 -> {
-                    listChickenRight.add(Chicken(mContext).apply {
-                        width = ((screenWidth - 100) / 5)
-                        height = width
-                        ori = Ori.RIGHT
-                        x = screenWidth
-                        y = 5 * height.toFloat() + 50f
-                    })
-                }
-            }
-        }
-
-        listChicken = (listChickenLeft + listChickenRight) as ArrayList<Chicken>
-        listBomb.add(FireBomb(mContext))
+    private fun gameOver() {
+        isPlaying = false
+        val intent = Intent(mContext, GameOverActivity::class.java)
+        intent.putExtra("score", score)
+        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+        mContext.startActivity(intent)
+        activity.finish()
     }
-
-    private fun moveAllChicken2() {
-        for (i in 0 until listChickenRight.size) {
-            if (i == 0) {
-                if (listChickenRight[i].x > 20f) {
-                    listChickenRight[i].x -= 20
-                }
-            } else {
-                if (listChickenRight[i].x - listChickenRight[i - 1].x > (listChickenRight[i].width)) {
-                    listChickenRight[i].x -= 20
-                }
-            }
-        }
-
-        for (i in 0 until listChickenLeft.size) {
-            if (i == 0) {
-                if (listChickenLeft[i].x < screenWidth - 20f - listChickenLeft[i].width) {
-                    listChickenLeft[i].x += 20
-                }
-            } else {
-                if (listChickenLeft[i - 1].x - listChickenLeft[i].x > (listChickenLeft[i].width)) {
-                    listChickenLeft[i].x += 20
-                }
-            }
-        }
-    }
-
-
 }

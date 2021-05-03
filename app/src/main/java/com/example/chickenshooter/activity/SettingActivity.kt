@@ -2,14 +2,14 @@ package com.example.chickenshooter.activity
 
 import android.os.Bundle
 import android.text.InputType
-import android.text.method.PasswordTransformationMethod
-import android.view.Gravity
 import androidx.appcompat.app.AlertDialog
 import androidx.databinding.DataBindingUtil
 import com.example.chickenshooter.R
 import com.example.chickenshooter.databinding.ActivitySettingBinding
 import com.google.android.material.textfield.TextInputEditText
-
+/**
+ * Created by Dinh Sam Vu on 12/20/2021.
+ */
 class SettingActivity : BaseActivity() {
     private lateinit var binding: ActivitySettingBinding
 

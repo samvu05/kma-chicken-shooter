@@ -4,6 +4,8 @@ com/example/chickenshooter/databinding/ActivityMainBinding.java
  com.example.chickenshooter.databinding.ActivityMainBinding
 com/example/chickenshooter/DataBindingTriggerClass.java
  com.example.chickenshooter.DataBindingTriggerClass
+com/example/chickenshooter/databinding/ActivityGameOverBinding.java
+ com.example.chickenshooter.databinding.ActivityGameOverBinding
 com/example/chickenshooter/databinding/ActivityHelpBinding.java
  com.example.chickenshooter.databinding.ActivityHelpBinding
 com/example/chickenshooter/databinding/ActivityHighscoreBinding.java

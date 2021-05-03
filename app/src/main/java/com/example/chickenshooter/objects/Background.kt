@@ -4,14 +4,15 @@ import android.content.res.Resources
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import com.example.chickenshooter.R
-
-class Background {
-    var background: Bitmap
+/**
+ * Created by Dinh Sam Vu on 1/4/2021.
+ */
+class Background(screenWidth: Float, screenHeight: Float, res: Resources) {
+    var background: Bitmap = BitmapFactory.decodeResource(res, R.drawable.bg_play5)
     var x = 0f
     var y = 0f
 
-    constructor(screenWidth: Float, screenHeight: Float, res: Resources) {
-        background = BitmapFactory.decodeResource(res, R.drawable.background1)
+    init {
         background =
             Bitmap.createScaledBitmap(background, screenWidth.toInt(), screenHeight.toInt(), false)
     }

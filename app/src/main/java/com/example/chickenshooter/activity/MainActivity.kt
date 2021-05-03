@@ -8,7 +8,9 @@ import androidx.databinding.DataBindingUtil
 import com.example.chickenshooter.R
 import com.example.chickenshooter.databinding.ActivityMainBinding
 
-
+/**
+ * Created by Dinh Sam Vu on 12/20/2021.
+ */
 class MainActivity : BaseActivity() {
     private lateinit var binding: ActivityMainBinding
     private var isMute: Boolean = false
@@ -23,6 +25,7 @@ class MainActivity : BaseActivity() {
 
     private fun initViews() {
         mp = MediaPlayer.create(this, R.raw.menu_mp)
+        mp.isLooping = true
         isMute = preferenceHelper.isMute()
         if (isMute) {
             binding.btnSound.setImageResource(R.drawable.ic_sound_off)

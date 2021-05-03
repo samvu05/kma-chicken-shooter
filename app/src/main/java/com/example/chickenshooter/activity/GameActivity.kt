@@ -6,13 +6,14 @@ import android.media.MediaPlayer
 import android.os.Bundle
 import com.example.chickenshooter.gameview.GameView
 import com.example.chickenshooter.R
-
+/**
+ * Created by Dinh Sam Vu on 12/20/2021.
+ */
 @Suppress("DEPRECATION")
 class GameActivity : BaseActivity() {
     private lateinit var gameView: GameView
-    private var isMute = false
+    var isMute = false
     private lateinit var mpBackgroundSound: MediaPlayer
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +22,7 @@ class GameActivity : BaseActivity() {
         gameView = GameView(this, point)
         setContentView(gameView)
         mpBackgroundSound = MediaPlayer.create(this, R.raw.boss_mp)
+        mpBackgroundSound.isLooping = true
         isMute = preferenceHelper.isMute()
         if (!isMute) {
             mpBackgroundSound.start()

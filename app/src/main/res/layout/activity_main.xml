@@ -9,17 +9,24 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/margin_32"
         tools:context=".activity.MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_play5" />
+
 
         <TextView
             android:id="@+id/tv_wellcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/margin_64"
+            android:layout_marginTop="@dimen/margin_84"
             android:fontFamily="@font/atari_pixel"
             android:text="@string/wellcome"
+            android:textColor="@color/text_color_white"
             android:textSize="17sp" />
 
         <TextView
@@ -30,8 +37,10 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/margin_8"
             android:fontFamily="@font/atari_pixel"
+            android:padding="@dimen/margin_8"
             android:text="@string/s_a_m_v_u"
-            android:textSize="@dimen/textSize28" />
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/textSize32" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -43,38 +52,50 @@
             <TextView
                 android:id="@+id/btn_play"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
                 android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/bg_titile"
                 android:fontFamily="@font/atari_pixel"
+                android:gravity="center"
                 android:text="@string/play"
-                android:textSize="@dimen/textSize28" />
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/textSize32" />
 
             <TextView
                 android:id="@+id/btn_high_score"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
                 android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/bg_titile"
                 android:fontFamily="@font/atari_pixel"
+                android:gravity="center"
                 android:text="@string/high_score"
-                android:textSize="@dimen/textSize28" />
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/textSize32" />
 
             <TextView
                 android:id="@+id/btn_help"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
                 android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/bg_titile"
                 android:fontFamily="@font/atari_pixel"
+                android:gravity="center"
                 android:text="@string/help"
-                android:textSize="@dimen/textSize28" />
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/textSize32" />
 
             <TextView
                 android:id="@+id/btn_exit"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
+                android:background="@drawable/bg_titile"
+                android:gravity="center"
                 android:layout_marginTop="@dimen/margin_16"
                 android:fontFamily="@font/atari_pixel"
                 android:text="@string/exit"
-                android:textSize="@dimen/textSize28" />
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/textSize32" />
         </LinearLayout>
 
         <ImageButton
@@ -82,6 +103,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/margin_32"
+            android:layout_marginBottom="@dimen/margin_32"
             android:background="@color/transcolor"
             android:src="@drawable/ic_sound_on"
             tools:ignore="ContentDescription" />
@@ -93,6 +116,8 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="@dimen/margin_32"
             android:background="@color/transcolor"
             android:src="@drawable/ic_setting"
             tools:ignore="ContentDescription" />

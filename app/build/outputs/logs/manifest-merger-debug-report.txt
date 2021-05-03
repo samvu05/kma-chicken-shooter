@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:2:1-35:12
+ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:2:1-38:12
 MERGED from [androidx.databinding:databinding-adapters:4.1.1] C:\Users\SamVu\.gradle\caches\transforms-2\files-2.1\11c30eab7fa9069b3a2c9ff9b44f2cb2\databinding-adapters-4.1.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:4.1.1] C:\Users\SamVu\.gradle\caches\transforms-2\files-2.1\fb1ff2ae0efbc692f9d356fad5624d4e\databinding-runtime-4.1.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:viewbinding:4.1.1] C:\Users\SamVu\.gradle\caches\transforms-2\files-2.1\088b7485e805dcbe5eacdb632761df66\jetified-viewbinding-4.1.1\AndroidManifest.xml:17:1-22:12
@@ -36,25 +36,25 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\SamVu\.gradle
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\SamVu\.gradle\caches\transforms-2\files-2.1\416c3602f83ec574991e5bd9eab8a865\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\SamVu\.gradle\caches\transforms-2\files-2.1\0e939b520824d323d350ca62540c13c1\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\SamVu\.gradle\caches\transforms-2\files-2.1\c1bc2009ed393c1281f28af6bb79c366\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:2:1-38:12
 	package
 		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:3:5-41
 		INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:2:1-35:12
+		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:2:1-38:12
 		INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:2:1-35:12
+		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:2:1-38:12
 		INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:5:5-33:19
+ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:5:5-36:19
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\SamVu\.gradle\caches\transforms-2\files-2.1\510c987a74b26e0d326e9880d2cc3fe0\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\SamVu\.gradle\caches\transforms-2\files-2.1\510c987a74b26e0d326e9880d2cc3fe0\material-1.2.1\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\SamVu\.gradle\caches\transforms-2\files-2.1\74d3dfb417b8176313f67b6d530795eb\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -112,11 +112,17 @@ ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\Andr
 	android:name
 		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:28:13-53
 activity#com.example.chickenshooter.activity.GameActivity
-ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:30:9-32:51
+ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:30:9-32:52
 	android:screenOrientation
 		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:32:13-49
 	android:name
 		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:31:13-50
+activity#com.example.chickenshooter.activity.GameOverActivity
+ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:33:9-35:52
+	android:screenOrientation
+		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:35:13-49
+	android:name
+		ADDED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:34:13-54
 uses-sdk
 INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml

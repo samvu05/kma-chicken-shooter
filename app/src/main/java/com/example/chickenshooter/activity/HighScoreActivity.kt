@@ -5,7 +5,9 @@ import android.view.View
 import androidx.databinding.DataBindingUtil
 import com.example.chickenshooter.R
 import com.example.chickenshooter.databinding.ActivityHighscoreBinding
-
+/**
+ * Created by Dinh Sam Vu on 12/20/2021.
+ */
 class HighScoreActivity : BaseActivity() {
     private lateinit var binding: ActivityHighscoreBinding
 

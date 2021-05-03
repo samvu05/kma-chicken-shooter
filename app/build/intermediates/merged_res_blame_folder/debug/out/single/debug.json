@@ -1,31 +1,31 @@
 [
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icc_btn_close.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\icc_btn_close.png"
     },
     {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background.png.flat",
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\background.png"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_setting.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_setting.png"
-    },
-    {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_setting.png.flat",
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_setting.png"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_purpletarget_2.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\purpletarget_2.png"
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_bullet2.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_bullet2.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_bomb1.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_bomb1.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_main2.jpg.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\bg_main2.jpg"
     },
     {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_yellowtarget_1.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\yellowtarget_1.png"
     },
     {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_setting.xml.flat",
@@ -36,88 +36,48 @@
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_sound_on.png"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_explosion6.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\explosion6.png"
-    },
-    {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_sound_off.png.flat",
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_sound_off.png"
-    },
-    {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_heart_read.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\icon_heart_read.png"
     },
     {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\raw_menu_mp.mp3.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\raw\\menu_mp.mp3"
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_play5.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\bg_play5.png"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_explosion_03.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\explosion_03.png"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_missile.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\missile.png"
-    },
-    {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_explosion2.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\explosion2.png"
-    },
-    {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
-    },
-    {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\raw_mp_lost.mp3.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\raw\\mp_lost.mp3"
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_chicken2.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_chicken2.png"
     },
     {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_sound_on.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_sound_on.png"
-    },
-    {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_sound_off.png.flat",
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_sound_off.png"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_yellowtarget_2.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\yellowtarget_2.png"
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_sound_on.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_sound_on.png"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\raw_fireshot.mp3.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\raw\\fireshot.mp3"
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_btn_info.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\ic_btn_info.png"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_spaceship3.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_spaceship3.png"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\raw_mp_win.mp3.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\raw\\mp_win.mp3"
-    },
-    {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_sound_off.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_sound_off.png"
-    },
-    {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_explosion0.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\explosion0.png"
-    },
-    {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_highscore.xml.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\layout\\activity_highscore.xml"
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_bomb2.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_bomb2.png"
     },
     {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\raw_boss_mp.mp3.flat",
@@ -128,28 +88,16 @@
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_chicken1.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_chicken1.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_explosion_04.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\explosion_04.png"
     },
     {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_setting.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_setting.png"
-    },
-    {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_explosion3.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\explosion3.png"
-    },
-    {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\font_atarichunky.ttf.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\font\\atarichunky.ttf"
     },
     {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
@@ -160,10 +108,6 @@
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_sound_on.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_sound_on.png"
-    },
-    {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_setting.xml.flat",
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\layout\\activity_setting.xml"
     },
@@ -172,20 +116,24 @@
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_sound_off.png"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_explosion4.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\explosion4.png"
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_explosion_08.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\explosion_08.png"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_spaceship2.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_spaceship2.png"
     },
     {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\raw_game_mp.mp3.flat",
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\raw\\game_mp.mp3"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_spaceship5.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_spaceship5.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_item_speed_neff.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\ic_item_speed_neff.png"
     },
     {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
@@ -196,6 +144,10 @@
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\background1.png"
     },
     {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_game_over.xml.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\layout\\activity_game_over.xml"
+    },
+    {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_sound_on.png.flat",
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_sound_on.png"
     },
@@ -204,72 +156,64 @@
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_sound_on.xml"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_firebomb.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\firebomb.png"
-    },
-    {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\font_atari_pixel.ttf.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\font\\atari_pixel.ttf"
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_explosion_05.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\explosion_05.png"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_fingure.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\icon_fingure.png"
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_play1.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\bg_play1.png"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_sound_off.xml.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_sound_off.xml"
-    },
-    {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_explosion5.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\explosion5.png"
-    },
-    {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_main3.jpg.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\bg_main3.jpg"
     },
     {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_setting.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_setting.png"
-    },
-    {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_purpletarget_1.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\purpletarget_1.png"
-    },
-    {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_setting.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_setting.png"
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_chicken6.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_chicken6.png"
     },
     {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_sound_off.png.flat",
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_sound_off.png"
     },
     {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_play4.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\bg_play4.png"
+    },
+    {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_sound_on.png.flat",
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_sound_on.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_item_bullet_line_buff.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\ic_item_bullet_line_buff.png"
     },
     {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_sound_off.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_sound_off.png"
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_explosion_02.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\explosion_02.png"
     },
     {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_help.xml.flat",
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\layout\\activity_help.xml"
     },
     {
-        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_explosion1.png.flat",
-        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\explosion1.png"
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_bomb7.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_bomb7.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_bullet.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_bullet.png"
     },
     {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_setting.png.flat",
@@ -278,5 +222,245 @@
     {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_sound_on.png.flat",
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_sound_on.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_chicken3.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_chicken3.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_explosion_06.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\explosion_06.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_heart2.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_heart2.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_setting.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_setting.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_spaceship7.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_spaceship7.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_item_speed_buff.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\ic_item_speed_buff.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_chicken5.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_chicken5.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\raw_menu_mp.mp3.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\raw\\menu_mp.mp3"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_bomb4.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_bomb4.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\raw_mp_lost.mp3.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\raw\\mp_lost.mp3"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_heart1.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_heart1.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_item_bullet_line_neff.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\ic_item_bullet_line_neff.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\raw_fireshot.mp3.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\raw\\fireshot.mp3"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_chicken4.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_chicken4.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\raw_mp_win.mp3.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\raw\\mp_win.mp3"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_btn_replay.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\ic_btn_replay.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_sound_off.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_sound_off.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_highscore.xml.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\layout\\activity_highscore.xml"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_explosion_07.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\explosion_07.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_title_panel.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\bg_title_panel.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_spaceship6.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_spaceship6.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_play2.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\bg_play2.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_setting.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_setting.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_btn_play.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\ic_btn_play.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\font_atarichunky.ttf.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\font\\atarichunky.ttf"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_bomb5.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_bomb5.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_sound_on.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_sound_on.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_bomb3.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_bomb3.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_explosion_01.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\explosion_01.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_bomb6.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_bomb6.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_chicken7.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_chicken7.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_firebomb.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\firebomb.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_play3.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\bg_play3.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\font_atari_pixel.ttf.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\font\\atari_pixel.ttf"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_sound_off.xml.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_sound_off.xml"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\raw_bomb.mp3.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\raw\\bomb.mp3"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_titile.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\bg_titile.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_heart3.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_heart3.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_spaceship1.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_spaceship1.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_main.jpg.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\bg_main.jpg"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_setting.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_setting.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_setting.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_setting.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_sound_off.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_sound_off.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_asset_spaceship4.png.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\asset_spaceship4.png"
+    },
+    {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_help.jpg.flat",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\drawable\\bg_help.jpg"
     }
 ]

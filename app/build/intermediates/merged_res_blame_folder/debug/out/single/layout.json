@@ -12,6 +12,10 @@
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\layout\\activity_help.xml"
     },
     {
+        "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_game_over.xml",
+        "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\layout\\activity_game_over.xml"
+    },
+    {
         "merged": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_setting.xml",
         "source": "C:\\Users\\SamVu\\AndroidStudioProjects\\ChickenShooter\\app\\src\\main\\res\\layout\\activity_setting.xml"
     }

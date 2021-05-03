@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_play2" />
+
+        <LinearLayout
+            android:id="@+id/score_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/atari_pixel"
+                android:text="GAME OVER"
+                android:textSize="@dimen/textSize32"
+                android:textColor="@color/text_color_white"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_64"
+                android:fontFamily="@font/atari_pixel"
+                android:text="Score"
+                android:textSize="@dimen/textSize32"
+                android:textColor="@color/text_color_white"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:fontFamily="@font/atari_pixel"
+                android:text="55"
+                android:textSize="@dimen/textSize96"
+                android:textColor="@color/text_color_white"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_below="@id/score_view"
+            android:layout_marginTop="@dimen/margin_64"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_replay"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_btn_replay"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/btn_exit"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/margin_84"
+                android:scaleType="fitXY"
+                android:src="@drawable/icc_btn_close"
+                android:layout_marginStart="@dimen/margin_84"
+                tools:ignore="ContentDescription" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

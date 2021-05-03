@@ -11,7 +11,7 @@
 9-->C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:5:5-33:19
+11-->C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:5:5-36:19
 12        android:allowBackup="true"
 12-->C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -64,11 +64,17 @@
 38            android:screenOrientation="portrait" />
 38-->C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:29:13-49
 39        <activity
-39-->C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:30:9-32:51
+39-->C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:30:9-32:52
 40            android:name="com.example.chickenshooter.activity.GameActivity"
 40-->C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:31:13-50
 41            android:screenOrientation="portrait" />
 41-->C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:32:13-49
-42    </application>
-43
-44</manifest>
+42        <activity
+42-->C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:33:9-35:52
+43            android:name="com.example.chickenshooter.activity.GameOverActivity"
+43-->C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:34:13-54
+44            android:screenOrientation="portrait" />
+44-->C:\Users\SamVu\AndroidStudioProjects\ChickenShooter\app\src\main\AndroidManifest.xml:35:13-49
+45    </application>
+46
+47</manifest>
